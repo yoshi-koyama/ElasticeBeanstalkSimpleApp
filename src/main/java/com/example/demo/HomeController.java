@@ -17,7 +17,7 @@ public class HomeController {
         return "hello";
     }
 
-    @GetMapping("books")
+    @GetMapping("/books")
     public List<Book> books() {
         return repository.findAll();
     }
